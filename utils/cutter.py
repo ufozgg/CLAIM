@@ -6,12 +6,8 @@ cutter = thulac.thulac(seg_only=True)
 frequency = {}
 
 path_list = [
-    ["/data/disk3/private/zhx/theme/data/ljp/final_all_data/exercise_contest",
-     "/data/disk3/private/zhx/theme/data/ljp/final_all_data/exercise_contest_cutted"],
-    ["/data/disk3/private/zhx/theme/data/ljp/final_all_data/first_stage",
-     "/data/disk3/private/zhx/theme/data/ljp/final_all_data/first_stage_cutted"],
-    ["/data/disk3/private/zhx/theme/data/ljp/final_all_data/restData",
-     "/data/disk3/private/zhx/theme/data/ljp/final_all_data/restData_cutted"],
+    ["/home/zhangjunqi/zrz/legal/data",
+     "/home/zhangjunqi/zrz/legal/data_cutted"],
 ]
 
 
@@ -46,6 +42,6 @@ if __name__ == "__main__":
                 print(json.dumps(x, ensure_ascii=False, sort_keys=True), file=f)
             f.close()
 
-    json.dump(frequency, open("/data/disk3/private/zhx/theme/data/ljp/frequency.txt", "w", encoding="utf8"),
+    json.dump(frequency, open("/home/zhangjunqi/zrz/legal/data/ljp/frequency.txt", "w", encoding="utf8"),
               indent=2,
               ensure_ascii=False)
