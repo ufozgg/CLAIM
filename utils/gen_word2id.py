@@ -5,7 +5,7 @@ min_freq = 100
 
 keep = set()
 
-input_path = "/home/zhangjunqi/zrz/legal/data/ljp/frequency.txt"
+input_path = "/home/zhangjunqi/zrz/legal/ljp/frequency.txt"
 
 if __name__ == "__main__":
     data = json.load(open(input_path, "r"))
@@ -22,6 +22,6 @@ if __name__ == "__main__":
         word2id[word_list[a]] = a
     print(len(word2id))
 
-    json.dump(word2id, open("/home/zhangjunqi/zrz/legal/data/ljp/word2id.txt", "w", encoding="utf8"),
+    json.dump(word2id, open("/home/zhangjunqi/zrz/legal/ljp/word2id.txt", "w", encoding="utf8"),
               ensure_ascii=False,
               indent=2)
